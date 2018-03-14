@@ -9,8 +9,8 @@ class Subtract extends React.Component {
         this.addNumber = (event) => {
             event.preventDefault();
 
-            const number1 = parseInt(document.getElementById('num1').value);
-            const number2 = parseInt(document.getElementById('num2').value);
+            const number1 = Number(document.getElementById('num1').value);
+            const number2 = Number(document.getElementById('num2').value);
 
             if (number1 === +number1 && number2 === +number2) {
                 console.log(number1 - number2);

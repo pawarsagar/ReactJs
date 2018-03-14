@@ -9,8 +9,8 @@ class Addition extends React.Component {
         this.addNumber = (event) => {
             event.preventDefault();
 
-            const number1 = parseInt(document.getElementById('Anum1').value);
-            const number2 = parseInt(document.getElementById('Anum2').value);
+            const number1 = Number(document.getElementById('Anum1').value);
+            const number2 = Number(document.getElementById('Anum2').value);
             debugger;
 
             if (number1 === +number1 && number2 === +number2) {
